@@ -8,6 +8,7 @@ Blockly.Python['pin_digital_write'] = function(block) {
     return code;
 };
 
+
 Blockly.Python['pin_digital_read'] = function(block) {
     Blockly.Python.definitions_['from_machine_import_pin'] = 'from machine import Pin';
 

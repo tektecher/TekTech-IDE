@@ -9,7 +9,7 @@ Blockly.defineBlocksWithJsonArray([{
         "inputsInline": true,
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#0e8814",
+        "colour": "#db7f2f",
         "tooltip": "",
         "helpUrl": ""
     },
@@ -28,7 +28,7 @@ Blockly.defineBlocksWithJsonArray([{
         }],
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#0e8814",
+        "colour": "#db7f2f",
         "tooltip": "%{BKY_CONTROLS_REPEAT_TOOLTIP}",
         "helpUrl": "%{BKY_CONTROLS_REPEAT_HELPURL}"
     },
@@ -47,7 +47,7 @@ Blockly.defineBlocksWithJsonArray([{
         }],
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#0e8814",
+        "colour": "#db7f2f",
         "helpUrl": "%{BKY_CONTROLS_IF_HELPURL}",
         "mutator": "controls_if_mutator",
         "extensions": ["controls_if_tooltip"]
@@ -66,7 +66,7 @@ Blockly.defineBlocksWithJsonArray([{
         "inputsInline": true,
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#0e8814",
+        "colour": "#db7f2f",
         "tooltip": "",
         "helpUrl": ""
     },
@@ -84,7 +84,7 @@ Blockly.defineBlocksWithJsonArray([{
         "inputsInline": true,
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#0e8814",
+        "colour": "#db7f2f",
         "tooltip": "",
         "helpUrl": ""
     },
@@ -112,7 +112,7 @@ Blockly.defineBlocksWithJsonArray([{
         }],
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#0e8814",
+        "colour": "#db7f2f",
         "helpUrl": "%{BKY_CONTROLS_WHILEUNTIL_HELPURL}",
         "extensions": ["controls_whileUntil_tooltip"]
     },
@@ -151,7 +151,7 @@ Blockly.defineBlocksWithJsonArray([{
         "inputsInline": true,
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#0e8814",
+        "colour": "#db7f2f",
         "helpUrl": "%{BKY_CONTROLS_FOR_HELPURL}",
         "extensions": [
             "contextMenu_newGetVariableBlock",

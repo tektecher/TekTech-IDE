@@ -2,9 +2,10 @@ let term = null, fitAddon = null;
 let terminalShowFlag = false;
 let beforeWidthTerminalSize = 300;
 
-const MINIMUM_TERMINAL_WIDTH = 300;
+const MINIMUM_Terminal_WIDTH = 300;
 
-$("#close-terminal").click(() => {
+$("#close-terminal,#open-tutorial").click(() => {
+    
     $("#terminal").css("display", "none");
     if (terminalFullSizeFlag) {
         $(".page > .main").css("display", "flex");
@@ -33,6 +34,7 @@ $("#resize-terminal").click(() => {
 $("#clear-terminal").click(() => term.clear());
 
 $("#open-terminal").click(() => {
+    
     terminalShowFlag = true;
     $("#terminal").css("display", "flex");
     if (terminalFullSizeFlag) {
@@ -60,7 +62,7 @@ $("#terminal-h-resize").bind('mousedown', function(event){
 
     $(document).bind('mousemove', function(event){
         let rightPos = offsetX - event.pageX;
-        rightPos = rightPos < MINIMUM_TERMINAL_WIDTH ? MINIMUM_TERMINAL_WIDTH : rightPos;
+        rightPos = rightPos < MINIMUM_Terminal_WIDTH ? MINIMUM_Terminal_WIDTH : rightPos;
         $("#terminal-h-resize").css("right", rightPos - 14);
     }).bind('mouseup', function(event){
         $(this).unbind('mousemove');
@@ -91,7 +93,7 @@ if (!isEmbed && deviceMode === MODE_REAL_DEVICE) {
     terminal_size = localStorage.getItem("terminal_size");
     if (terminal_size) {
         terminal_size = +terminal_size;
-        beforeWidthTerminalSize = terminal_size >= MINIMUM_TERMINAL_WIDTH ? terminal_size : MINIMUM_TERMINAL_WIDTH;
+        beforeWidthTerminalSize = terminal_size >= MINIMUM_Terminal_WIDTH ? terminal_size : MINIMUM_Terminal_WIDTH;
         $(() => $("#open-terminal").click());
     }
 }

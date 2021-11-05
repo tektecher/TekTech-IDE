@@ -1,4 +1,5 @@
-Blockly.defineBlocksWithJsonArray([{
+Blockly.defineBlocksWithJsonArray([
+    {
         "type": "pin_digital_read",
         "message0": "digital read pin %1",
         "args0": [{
@@ -258,5 +259,5 @@ Blockly.defineBlocksWithJsonArray([{
         "colour": "#0925c7",
         "tooltip": "",
         "helpUrl": ""
-    },
+    }
 ]);

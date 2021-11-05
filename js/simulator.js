@@ -15,10 +15,10 @@ let switchModeTo = (mode, firstTime) => {
     let nowMode = deviceMode;
     if (nowMode !== mode) {
         if (nowMode === MODE_REAL_DEVICE) {
-            if (terminalShowFlag) {
+            if (tutorialShowFlag) {
                 $("#close-terminal").click();
                 setTimeout(_ => {
-                    terminalShowFlag = true;
+                    tutorialShowFlag = true;
                 }, 100);
             }
         } else if (nowMode === MODE_SIMULATOR) {
@@ -38,7 +38,7 @@ let switchModeTo = (mode, firstTime) => {
     }
 
     if (mode === MODE_REAL_DEVICE) {
-        if (terminalShowFlag) {
+        if (tutorialShowFlag) {
             $("#open-terminal").click();
         }
     } else if (mode === MODE_SIMULATOR) {

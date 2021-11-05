@@ -130,7 +130,7 @@
 
 <body>
     <div id="full-loading">
-        <div class="box">
+        <div class="box ">
             <img src="favicon3.png" alt="">
             <div class="label">Loading...</div>
         </div>
@@ -139,23 +139,26 @@
         <article class="main">
             <header>
                 <div class="left">
-                    <div class="header-logo animate__animated animate__bounceInLeft">TekTech<sub>microBlock</sub></div>
+                    <div class="header-logo animate__animated animate__bounceInLeft  inverted">TekTech<sub>microBlock</sub></div>
                 </div>
-                <div class="center">
+                <div class="center inverted">
                     <ul class="switch-mode" id="mode-select-switch">
                         <li data-value="1" data-tippy-content="Switch to Block mode" class="active">Block</li>
                         <li data-value="2" data-tippy-content="Switch to Code mode">Code</li>
                     </ul>
                 </div>
                 <div class="right">
-                    <ul class="top-bar-button">
-                        <li><button id="switch-to-sim-mode" style="display: none;" data-tippy-content="Switch to Simulator Mode"><i class="fas fa-hat-wizard"></i></button></li>
+                    <ul class="top-bar-button inverted">
+                        <!-- <li><button id="switch-to-sim-mode" style="display: none;" data-tippy-content="Switch to Simulator Mode"><i class="fas fa-hat-wizard"></i></button></li>
                         <li><button id="switch-to-real-mode" style="display: none;" data-tippy-content="Switch to Real Mode"><i class="fas fa-microchip"></i></button></li>
-                        <li><button id="install-pwa" style="display: none;" onclick="installPWA()" data-tippy-content="Install microBlock to your PC"><i class="fas fa-download"></i></button></li>
+                        <li><button id="install-pwa" style="display: none;" onclick="installPWA()" data-tippy-content="Install microBlock to your PC"><i class="fas fa-download"></i></button></li> -->
                         <li><button id="open-extension-dialog" data-tippy-content="Extension"><i class="fas fa-cubes"></i></button></li>
                         <li><button id="open-dashboard" data-tippy-content="Dashboard"><i class="fas fa-chart-line"></i></button></li>
                         <li><button id="open-help" data-tippy-content="Help"><i class="fas fa-question"></i></button></li>
                         <li><button id="code-share" data-tippy-content="Share Project"><i class="fas fa-share"></i></button></li>
+                        <li><button id="dark-mode" onclick="Dark()" data-tippy-content="Dark Mode"><i class="Dark"></i></button></li>
+                        <li><button id="open-tutorial" data-tippy-content="Our Tutorial"><i class="fas fa-tutorial"></i></button></li>
+
                     </ul>
                     <ul class="embed-only top-bar-button" style="display: none;">
                         <li><button id="embed-edit" data-tippy-content="Upload & Edit"><i class="fas fa-external-link-alt"></i></button></li>
@@ -174,8 +177,8 @@
                 <!-- </ul>
                     </section> -->
                 <section class="work-box">
-                    <div id="blocklyArea"></div>
-                    <div id="blocklyDiv" style="position: absolute;"></div>
+                    <div  id="blocklyArea"></div>
+                    <div  id="blocklyDiv" style="position: absolute;"></div>
                 </section>
             </section>
             <section id="code-editor">
@@ -183,16 +186,16 @@
             </section>
             <footer>
                 <div class="control-box">
-                    <ul class="button-list left">
+                    <ul class="button-list left inverted">
                         <li><button id="new-project" data-tippy-content="New project"><i class="far fa-file"></i></button></li>
                         <li><input type="text" id="project-name" value="myProject" placeholder="Project Name"></li>
                         <li><button id="save-project" data-tippy-content="Save project"><i class="far fa-save"></i></button></li>
                         <li><button id="open-project" data-tippy-content="Open project"><i class="far fa-folder-open"></i></button></li>
                     </ul>
-                    <ul class="button-list center">
+                    <ul class="button-list center inverted">
                         <li><button id="upload-program" data-tippy-content="Upload" class="zoom"><i class="fas fa-upload"></i></button></li>
                     </ul>
-                    <ul class="button-list right">
+                    <ul class="button-list right inverted">
                         <li><button id="open-terminal" data-tippy-content="Open Terminal"><i class="fas fa-terminal"></i></button></li>
                     </ul>
                 </div>
@@ -209,7 +212,22 @@
                 </div>
             </footer>
         </article>
-
+        <!-- Right tutorial -->
+        <article id="tutorial">
+            <header>
+                <div class="title">Tutorial</div>
+                <div class="icon">
+                    <button id="resize-tutorial" data-tippy-content="Resize"><i class="fas fa-expand-alt"></i></button>
+                    <button id="close-tutorial" data-tippy-content="Close"><i class="fas fa-times"></i></button>
+                </div>
+            </header>
+            <section>
+                <h1 class="tutorial-title">Welcome to our tutorials</h1>
+                <iframe class="youtube inverted" width="320" src="https://www.youtube.com/embed/1__CAdTJ5JU?controls=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             
+                <iframe class="youtube inverted" width="320" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+        </article>
         <!-- Right Terminal -->
         <article id="terminal">
             <header>
@@ -222,7 +240,7 @@
                     <button id="close-terminal" data-tippy-content="Close"><i class="fas fa-times"></i></button>
                 </div>
             </header>
-            <section contenteditable="true"></section>
+            <section class="inverted" contenteditable="true"></section>
         </article>
 
         <!-- Right Simulator -->
@@ -473,8 +491,17 @@
     <script src="js/extension.js"></script>
     <script src="js/dashboard.js"></script>
     <script src="js/board.js"></script>
+    <script src="js/tutorial.js"></script>
     <script src="boards/index.js"></script>
+    <script>
+        function Dark(){
+            document.documentElement.classList.toggle('darkmode')
 
+            document.querySelectorAll('.inverted').forEach((result) => {
+                result.classList.toggle('darkmode-invert');
+            })
+        }
+    </script>
     <script>
         if (isElectron) {
             loadScript("js/fireware.js");
