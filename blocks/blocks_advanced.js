@@ -8,7 +8,7 @@ Blockly.defineBlocksWithJsonArray([{
         "inputsInline": true,
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#d11010",
+        "colour": "green",
         "tooltip": "",
         "helpUrl": ""
     },
@@ -51,7 +51,7 @@ Blockly.defineBlocksWithJsonArray([{
         ],
         "inputsInline": true,
         "output": "Number",
-        "colour": "#d11010",
+        "colour": "green",
         "tooltip": "",
         "helpUrl": ""
     },
@@ -65,7 +65,7 @@ Blockly.defineBlocksWithJsonArray([{
         }],
         "inputsInline": true,
         "output": "Number",
-        "colour": "#d11010",
+        "colour": "green",
         "tooltip": "",
         "helpUrl": ""
     },
@@ -115,7 +115,7 @@ Blockly.defineBlocksWithJsonArray([{
         "inputsInline": false,
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#d11010",
+        "colour": "green",
         "tooltip": "",
         "helpUrl": ""
     },
@@ -124,7 +124,7 @@ Blockly.defineBlocksWithJsonArray([{
         "message0": "RTC get Hour",
         "inputsInline": false,
         "output": "Number",
-        "colour": "#d11010",
+        "colour": "green",
         "tooltip": "",
         "helpUrl": ""
     },
@@ -133,7 +133,7 @@ Blockly.defineBlocksWithJsonArray([{
         "message0": "RTC get Min",
         "inputsInline": false,
         "output": "Number",
-        "colour": "#d11010",
+        "colour": "green",
         "tooltip": "",
         "helpUrl": ""
     },
@@ -142,7 +142,7 @@ Blockly.defineBlocksWithJsonArray([{
         "message0": "RTC get Second",
         "inputsInline": false,
         "output": "Number",
-        "colour": "#d11010",
+        "colour": "green",
         "tooltip": "",
         "helpUrl": ""
     },
@@ -151,7 +151,7 @@ Blockly.defineBlocksWithJsonArray([{
         "message0": "RTC get Day",
         "inputsInline": false,
         "output": "Number",
-        "colour": "#d11010",
+        "colour": "green",
         "tooltip": "",
         "helpUrl": ""
     },
@@ -160,7 +160,7 @@ Blockly.defineBlocksWithJsonArray([{
         "message0": "RTC get Month",
         "inputsInline": false,
         "output": "Number",
-        "colour": "#d11010",
+        "colour": "green",
         "tooltip": "",
         "helpUrl": ""
     },
@@ -169,7 +169,7 @@ Blockly.defineBlocksWithJsonArray([{
         "message0": "RTC get Year",
         "inputsInline": false,
         "output": "Number",
-        "colour": "#d11010",
+        "colour": "green",
         "tooltip": "",
         "helpUrl": ""
     },
@@ -178,7 +178,7 @@ Blockly.defineBlocksWithJsonArray([{
         "message0": "RTC get Microsecond",
         "inputsInline": false,
         "output": "Number",
-        "colour": "#d11010",
+        "colour": "green",
         "tooltip": "",
         "helpUrl": ""
     },
@@ -188,7 +188,7 @@ Blockly.defineBlocksWithJsonArray([{
         "inputsInline": true,
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#d11010",
+        "colour": "green",
         "tooltip": "",
         "helpUrl": ""
     },
@@ -203,7 +203,7 @@ Blockly.defineBlocksWithJsonArray([{
         "inputsInline": true,
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#d11010",
+        "colour": "green",
         "tooltip": "A lightsleep has full RAM and state retention. Upon wake execution is resumed from the point where the sleep was requested, with all subsystems operational.",
         "helpUrl": ""
     },
@@ -218,7 +218,7 @@ Blockly.defineBlocksWithJsonArray([{
         "inputsInline": true,
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#d11010",
+        "colour": "green",
         "tooltip": "A deepsleep may not retain RAM or any other state of the system (for example peripherals or network interfaces). Upon wake execution is resumed from the main script, similar to a hard or power-on reset.",
         "helpUrl": ""
     },
@@ -230,7 +230,7 @@ Blockly.defineBlocksWithJsonArray([{
             "Number",
             "Boolean"
         ],
-        "colour": "#d11010",
+        "colour": "green",
         "tooltip": "",
         "helpUrl": ""
     },
@@ -249,7 +249,7 @@ Blockly.defineBlocksWithJsonArray([{
         "inputsInline": true,
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#d11010",
+        "colour": "green",
         "tooltip": "",
         "helpUrl": ""
     },
@@ -259,7 +259,7 @@ Blockly.defineBlocksWithJsonArray([{
         "inputsInline": true,
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#d11010",
+        "colour": "green",
         "tooltip": "Reset board and start program again (NOT recommend)",
         "helpUrl": ""
     },
@@ -276,7 +276,7 @@ Blockly.defineBlocksWithJsonArray([{
         ],
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#d11010",
+        "colour": "green",
         "tooltip": "",
         "helpUrl": ""
     }

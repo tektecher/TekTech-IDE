@@ -7,7 +7,7 @@ Blockly.defineBlocksWithJsonArray([{
             "variable": "%{BKY_VARIABLES_DEFAULT_NAME}"
         }],
         "output": null,
-        "colour": "#e07a06",
+        "colour": "#A97A61",
         "helpUrl": "%{BKY_VARIABLES_GET_HELPURL}",
         "tooltip": "%{BKY_VARIABLES_GET_TOOLTIP}",
         "extensions": ["contextMenu_variableSetterGetter"]
@@ -28,7 +28,7 @@ Blockly.defineBlocksWithJsonArray([{
         ],
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#e07a06",
+        "colour": "#A97A61",
         "tooltip": "%{BKY_VARIABLES_SET_TOOLTIP}",
         "helpUrl": "%{BKY_VARIABLES_SET_HELPURL}",
         "extensions": ["contextMenu_variableSetterGetter"]
@@ -49,7 +49,7 @@ Blockly.defineBlocksWithJsonArray([{
         ],
         "previousStatement": null,
         "nextStatement": null,
-        "colour": "#e07a06",
+        "colour": "#A97A61",
         "helpUrl": "%{BKY_MATH_CHANGE_HELPURL}",
         "extensions": ["math_change_tooltip"]
     }

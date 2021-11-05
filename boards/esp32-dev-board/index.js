@@ -21,12 +21,15 @@ addBoard({
         "blocks/blocks_buzzer.js",
         "blocks/blocks_display.js",
         "blocks/blocks_sensor.js",
+        "extension/blocks/blocks_motor.js",
 
         "blocks/generators_pin.js",
         "blocks/generators_avanced.js",
         "blocks/generators_buzzer.js",
         "blocks/generators_display.js",
-        "blocks/generators_sensor.js"
+        "blocks/generators_sensor.js",
+        "extension/blocks/generators_motor.js"
+
     ],
     modules: [],
     firmware: [{
@@ -696,6 +699,131 @@ addBoard({
                     "text_join"
                 ]
             },
+
+        {
+            name: "Motor",
+            icon: `/images/icon/motor.png`,
+            color: "#ed3467",
+            blocks: [
+                {
+                    xml: `
+                            <block type="motor_1_forward">
+                                <value name="value">
+                                    <shadow type="math_number">
+                                        <field name="NUM">1</field>
+                                    </shadow>
+                                </value>
+                                <value name="pin">
+                                    <shadow type="math_number">
+                                        <field name="NUM">12</field>
+                                    </shadow>
+                                </value>
+                            </block>
+                        `
+                },
+                {
+                    xml: `
+                            <block type="motor_1_backward">
+                                <value name="value">
+                                    <shadow type="math_number">
+                                        <field name="NUM">1</field>
+                                    </shadow>
+                                </value>
+                                <value name="pin">
+                                    <shadow type="math_number">
+                                        <field name="NUM">12</field>
+                                    </shadow>
+                                </value>
+                            </block>
+                        `
+                },
+                {
+                    xml: `
+                            <block type="motor_2_forward">
+                                <value name="value">
+                                    <shadow type="math_number">
+                                        <field name="NUM">1</field>
+                                    </shadow>
+                                </value>
+                                <value name="pin">
+                                    <shadow type="math_number">
+                                        <field name="NUM">12</field>
+                                    </shadow>
+                                </value>
+                            </block>
+                        `
+                },
+                {
+                    xml: `
+                            <block type="motor_2_backward">
+                                <value name="value">
+                                    <shadow type="math_number">
+                                        <field name="NUM">1</field>
+                                    </shadow>
+                                </value>
+                                <value name="pin">
+                                    <shadow type="math_number">
+                                        <field name="NUM">12</field>
+                                    </shadow>
+                                </value>
+                            </block>
+                        `
+                },
+                {
+                    xml: `
+                            <block type="stop_all_motors">
+                                <value name="value">
+                                    <shadow type="math_number">
+                                        <field name="NUM">1</field>
+                                    </shadow>
+                                </value>
+                                <value name="pin">
+                                    <shadow type="math_number">
+                                        <field name="NUM">12</field>
+                                    </shadow>
+                                </value>
+                            </block>
+                        `
+                },
+                {
+                    xml: `
+                            <block type="stop_motor_1">
+                                <value name="value">
+                                    <shadow type="math_number">
+                                        <field name="NUM">1</field>
+                                    </shadow>
+                                </value>
+                                <value name="pin">
+                                    <shadow type="math_number">
+                                        <field name="NUM">12</field>
+                                    </shadow>
+                                </value>
+                            </block>
+                        `
+                },
+                {
+                    xml: `
+                            <block type="stop_motor_2">
+                                <value name="value">
+                                    <shadow type="math_number">
+                                        <field name="NUM">1</field>
+                                    </shadow>
+                                </value>
+                                <value name="pin">
+                                    <shadow type="math_number">
+                                        <field name="NUM">12</field>
+                                    </shadow>
+                                </value>
+                            </block>
+                        `
+                }
+
+            ]
+        },
+
+
+
+
             {
                 name: "Variables",
                 icon: `/images/icon/relativity.png`,
@@ -708,6 +836,7 @@ addBoard({
                 color: "#ed3467",
                 blocks: "PROCEDURE"
             },
+        
         ]
     }]
 });
